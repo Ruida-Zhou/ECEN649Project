@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sklearn.preprocessing as prep
 
-training_set = pd.DataFrame.from_csv("adult_test.csv",index_col = None, header = None)
+training_set = pd.DataFrame.from_csv("adult.csv",index_col = None, header = None)
 training_set = training_set.as_matrix()
 
 [training_row, training_col] = training_set.shape    
