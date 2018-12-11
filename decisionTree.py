@@ -131,7 +131,7 @@ predict_tree = createDecisionTree(dataSet, labels)
 #print(predict_tree)
 errorCount = 0
 for i in range(row_test):
-    new_data = training_data[i,:].tolist()
+    new_data = test_data[i,:].tolist()
     labels=['age','workclass','education','education-num','marital-status','occupation','Transport-moving','relationship','race','sex','capital-gain','capital-loss','hours-per-week']
     Label = classify(predict_tree,labels,new_data)
     if Label != test_label[i]:
