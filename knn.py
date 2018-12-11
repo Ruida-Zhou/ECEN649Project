@@ -85,5 +85,5 @@ def errorRatio(knn_class,real_class):
             error += 1
     return error/allCount
 
-predict_class = knn(training_data,4)
-error_ratio = errorRatio(predict_class,training_label)
+predict_class = knn(test_data,4)
+error_ratio = errorRatio(predict_class,test_label)
