@@ -236,11 +236,11 @@ for p in range(r):
     else:
         prediction[p] = 1
     
-counter = 0
+error_ratio = 0
 for i in range(r):
     if test_set[i,14]!= prediction[i]:
-        counter = counter + 1
-
+        error_ratio = error_ratio + 1
+error_ratio = error_ratio/r
 Testdata = np.hstack((test_set,prediction))
 dftest = pd.DataFrame(Testdata)
 
